@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/jpg" href="Discovery.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental & Servicing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px;
+      text-shadow: 3px 3px 3px #5085c4, 3px 3px 5px hwb(278 20% 7%);
+      margin-bottom: 10px;
+      font-family: 'Algerian';
+      background: linear-gradient(-60deg, rgb(156, 4, 207), rgba(0, 229, 255, 0.932), rgb(132, 0, 255));
+      animation: gradient 3s ease infinite;
+      text-shadow: 3px 3px 3px #5085c4, 3px 3px 5px hwb(278 20% 7%);
+      margin-bottom: 10px;
+      text-align: right;
+      
+        }
+
+        footer{
+            background-color:black;
+        }
+
+        nav {
+      background-color: #ffffff;
+      background-image: url('Universe.jpg');
+      background-size: 1500 1500;
+      padding: 10px;
+      color: white;
+      text-align: left;
+      font-family:'Constantiax' ;
+      word-spacing: 4px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+      padding:20px;
+    }
+
+    nav a:hover{
+        color:rgb(255, 0, 0);
+    }
+        section {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            width: 30%;
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url(car\ repair.png);
+            background-size: 800px;
+            background-repeat: no-repeat;
+        }
+
+        .rent {
+            width: 30%;
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url(rent.jpg);
+            background-repeat: no-repeat;
+            background-size: 800px;
+            background-position: center;
+            font-weight: bolder;
+        }
+        .rent .background-image{
+            opacity:0.5;
+        }
+
+        .support {
+            width: 30%;
+            margin: 1em;    
+            padding: 1em;
+            background-color: rgb(0, 0, 0)d6d;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url(male-mechanic.jpg);
+            background-repeat: no-repeat;
+            background-size: 800px;
+            background-position: center;
+            font-weight:bolder ;
+        }
+
+        .about-us {
+            width: 30%;
+            margin: 1em;
+            padding: 1em;
+            background-color: #ffeee6;
+            border-radius: 10px;
+            background-size: 800px;
+            font-weight: bolder;
+            align-content: center;
+            text-align: center;
+        }
+
+
+        .about-us img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 2em 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        footer{
+        background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            bottom: 10PX;
+            width: 100%;
+            font-family: 'Gabriola';
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 35px;
+    }
+        h1{
+            color: #000000;
+            font-family: 'algerian';
+            font-weight: 900%;
+        }
+
+        h3{
+        font-family:'high tower text';
+        padding-left: 10px;
+        color:#000000;
+        }
+        h2{
+            color:red;
+            font-family: 'Castellar';
+        }
+        p{
+            line-height: 1.6;
+            color: #ffffff;
+            font-family: 'Baskerville Old Face';
+            word-spacing: 4px;
+            font-size: 19px;
+            text-indent: 10px;
+            font-weight: bolder;
+        }
+        h4{
+            font-family: 'Californian FB';
+            color:darkorange;  
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: bolder;
+            text-shadow:2px 2px rgb(0, 0, 0);
+        }
+        p1{
+            color:#000000;
+            font-family: 'Chiller';
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        p2{
+        font-family:'Gabriola';
+        color: #ff0000;
+        word-spacing: 5px;
+        font-size: 35px;
+    }
+
+    .login-btn, .signup-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000000;
+            background-color: #9164e4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'high tower text';
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .login-btn:hover, .signup-btn:hover {
+            background-color: #00ff77;
+        }
+
+        video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      filter: blur(7px);
+    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 align="center"> AUTOMOTIVE </h1>
+        <hr>
+        <h3 align="left"> CAR RENTAL & SERVICING </h3>
+
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\login.html" class="login-btn">Login</a>
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\signup.html" class="signup-btn">Sign Up</a>
+
+    </header>
+
+    <nav>
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Home.html">Home</a> 
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\About us page.html">About us</a> 
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Services.html">Services </a> 
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Car page.html">Cars</a> 
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\price.html">Pricing</a> 
+        <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Cont us.html">Contact us</a> 
+      </nav>
+
+      <video autoplay muted loop>
+        <source src="Traf 2.mp4" type="video/mp4">
+      </video>
+    
+
+    <section>
+        <h4> Welcome to Our Rentaling and Servicing </h4>
+
+        <div class="services">
+            <div class="rent">
+                <h2 align="center">Car Rental</h2>
+                <p>Explore our wide range of rental cars for your travel needs. Whether you need a compact car for city
+                    exploration or a spacious SUV for a family trip, we have the perfect vehicle for you.</p>
+                <p>Our rental process is hassle-free, and we offer flexible rental periods to suit your schedule. Enjoy
+                    competitive rates and exceptional customer service.</p>
+            </div>
+            <div class="service">
+                <h2 align="center">Car Servicing</h2>
+                <p>Trust our certified technicians for top-notch car maintenance and servicing. We provide a
+                    comprehensive range of services, including oil changes, brake inspections, tire rotations, and
+                    more.</p>
+                <p>Regular servicing is essential for the longevity and performance of your vehicle. We use state-of-the-art
+                    equipment and genuine parts to ensure the highest quality service.</p>
+            </div>
+            <div class="support">
+                <h2 align="center">24/7 Support</h2>
+                <p>Our support team is always ready to assist you, 24/7. Whether you have questions about our rental
+                    process, need help with a service appointment, or require emergency roadside assistance, we are just a
+                    phone call away.</p>
+                <p>Your satisfaction and safety are our priorities, and we are committed to providing exceptional support
+                    whenever you need it.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p1> We the team AUTOMOTIVE to provide car rental and servicing. <br> Well trained professionals for servicing of vehicles. 
+            <br> Cars with better condition to make 
+            your Ride better. </p1>
+            <br>
+    </section>
+
+
+    <footer>
+        <p2>&copy; 2024 AUTOMOTIVE. All rights reserved.</p2>
+    </footer>
+</body>
+
+</html>

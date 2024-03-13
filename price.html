@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Pricing</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px;
+      text-shadow: 3px 3px 3px #5085c4, 3px 3px 5px hwb(278 20% 7%);
+      margin-bottom: 10px;
+      font-family: 'Algerian';
+      background: linear-gradient(-60deg, rgb(156, 4, 207), rgba(0, 229, 255, 0.932), rgb(132, 0, 255));
+      animation: gradient 3s ease infinite;
+      text-shadow: 3px 3px 3px #5085c4, 3px 3px 5px hwb(278 20% 7%);
+      margin-bottom: 10px;
+    }
+
+    button{
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-weight:900 ;
+        width: 300px;
+        background-color: #5dfaff;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        margin: 4px 2px;
+        transition: all 0.5;
+        cursor: pointer;
+        margin:5px;
+        font-family: Gabriola;
+        background: linear-gradient(-60deg, rgb(156, 4, 207), rgba(0, 229, 255, 0.932), rgb(132, 0, 255));
+    }
+
+    button span{
+        cursor: pointer;
+        transition-duration: 0.8s;
+        display: inline-block;
+        position: relative;
+          }
+
+    button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: .30s;
+    }
+
+    button:hover span {
+  padding-right: 25px;
+  border: 2px solid #ff96ad;
+  color:#ff96ad;
+  background-color: #17181c;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+    footer{
+        background-color: #000000;
+            color: #ff0000;
+            text-align: center;
+            bottom: 10PX;
+            width: 100%;
+            font-family: 'High tower text';
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 20px;
+    }
+
+    nav {
+      background-color: #ffffff;
+      background-image: url('Universe.jpg');
+      background-size: 1500 1500;
+      padding: 10px;
+      color: white;
+      text-align: left;
+      font-family:'Constantiax' ;
+      word-spacing: 4px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+      padding:20px;
+    }
+
+    nav a:hover{
+        color:rgb(255, 0, 0);
+    }
+
+    section {
+      padding: 50px;
+    }
+
+    .pricing-table {
+      display:grid;
+      flex-wrap: wrap;
+       justify-content: space-around;
+       height: auto;
+    }
+
+    .pricing-plan {
+      background-color: #000000;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 7px 7px 7px rgb(8, 239, 235);
+      width: 1350px;
+      text-align: center;
+    }
+
+    .pricing-plan h3 {
+      color: #ffffff;
+      text-align: left;
+      font-family: 'MingLiU-ExtB';
+      text-shadow: 2px 2px rgb(255, 0, 0);
+      letter-spacing: 6px;
+    }
+
+    .pricing-plan p {
+      color: #1cdcd8;
+      font-family: 'Mongolian Baiti';
+      font-size: 32px;
+    }
+
+    .pricing-plan .price {
+      color: #0022ff;
+      font-size: 24px;
+      margin: 10px 10px;
+    }
+
+    h1{
+        font-family: 'Algerian';
+    }
+
+    h2{
+        text-align: left;
+        font-family: 'high tower text';
+    }
+
+    p1{
+        color:#ffffff;
+        font-family: 'high tower text';
+        font-size: 25px;;
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(10, 5vw);
+    grid-gap: 10px;
+    height: max-content;
+    }
+
+    .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    }
+
+    .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    }
+
+    .gallery__item--2 {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    }
+
+    .gallery__item--3 {
+    grid-column-start: 8;
+    grid-column-end: 16;
+    grid-row-start: 7 ;
+    grid-row-end: 12;
+    }
+
+    .gallery__item--4 {
+    grid-column-start: 11;
+    grid-column-end: 16;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    }
+
+    .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    }
+
+    .gallery__item--6 {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    }
+
+    .gallery__item--7 {
+    grid-column-start: 11;
+    grid-column-end: 16;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    }
+
+    .gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 12;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 align="center"> AUTOMOTIVE </h1>
+    <hr>
+    <h2> Car Rent Pricing and Service Pricing</h2>
+  </header>
+
+  <nav>
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Home.html">Home</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\About us page.html">About us</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Services.html">Services </a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Car page.html">Cars</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\price.html">Pricing</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Cont us.html">Contact us</a> 
+  </nav>
+  <section>
+    <a href="serv pricing.html" target="_blank">
+      <button class="button"> <span> Click to view service pricing </span></button>
+  </a>
+
+    <div class="pricing-table">
+      <div class="pricing-plan">
+        <h3>ECONOMY RENTAL </h3>
+        <p>Perfect for short trips</p>
+        <p1> Average cost for Ecomnomy Cars would be around, </p1>
+        <br>
+        <hr>
+        <br>
+        <div class="price">Rs.1000-1500/day</div>
+        <section> 
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                  <img src="i20.jpg" class="gallery__img" alt="Image 1">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                  <img src="cele.jpg" class="gallery__img" alt="Image 2">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                  <img src="kwid.jpg" class="gallery__img" alt="Image 3">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                  <img src="jazz.jpg" class="gallery__img" alt="Image 4">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                  <img src="ind.jpg" class="gallery__img" alt="Image 5">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                  <img src="alto.jpg" class="gallery__img" alt="Image 6">
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                  <img src="figo.jpg" class="gallery__img" alt="Image 7">
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                  <img src="ameo.jpg" class="gallery__img" alt="Image 8">
+                </figure>
+              </div>
+        </section>
+      </div>
+
+      <br>
+
+      <div class="pricing-plan">
+        <h3>LUXURY RENTAL</h3>
+        <p>Luxury and comfort</p>
+        <p1> Average cost for Luxury Cars, would be around, </p1>
+        <br>
+        <br>
+        <div class="price"> Above Rs.3000/day </div>
+        <div class="price"> Above Rs.20000/week </div>
+        <br>
+        <hr>
+        <br>
+        <section> 
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                  <img src="OVRS.jpg" class="gallery__img" alt="Image 1">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                  <img src="PoloGT.jpg" class="gallery__img" alt="Image 2">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                  <img src="BMW.jpg" class="gallery__img" alt="Image 3">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                  <img src="RR.jpg" class="gallery__img" alt="Image 4">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                  <img src="Range.jpg" class="gallery__img" alt="Image 5">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                  <img src="VWV.jpg" class="gallery__img" alt="Image 6">
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                  <img src="CIV.jpg" class="gallery__img" alt="Image 7">
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                  <img src="cam.jpg" class="gallery__img" alt="Image 8">
+                </figure>
+              </div>
+        </section>
+      </div>
+
+      <br>
+
+      <div class="pricing-plan">
+        <h3>SUV's RENTAL</h3>
+        <p> Better for group of Friends and Family trips.</p>
+        <p1> Average Cost for SUV's, would be around </p1>
+        <br>
+        <br>
+        <div class="price"> Above Rs.4000/day</div>
+        <div class="price"> Above Rs.25000/Week</div>
+        <br>
+        <hr>
+        <br>
+            
+        <section> 
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                  <img src="XUV 700.jpg" class="gallery__img" alt="Image 1">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                  <img src="HEC.jpg" class="gallery__img" alt="Image 2">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                  <img src="sel.jpg" class="gallery__img" alt="Image 3">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                  <img src="Defender.jpg" class="gallery__img" alt="Image 4">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                  <img src="Discovery.jpg" class="gallery__img" alt="Image 5">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                  <img src="Fortuner.jpg" class="gallery__img" alt="Image 6">
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                  <img src="CRYSTA.jpg" class="gallery__img" alt="Image 7">
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                  <img src="MTHAR.jpg" class="gallery__img" alt="Image 8">
+                </figure>
+              </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+<br>
+<br>
+
+<footer>
+    <div class="container-fluid">
+    <p1>&copy; 2024 AUTOMOTIVE "ALL RIGHTS RESERVED" </p1>
+    </div>
+</footer>
+<br>
+<br>
+
+</body>
+
+</html>

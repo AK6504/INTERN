@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      background-image: url('Bokeh.jpg');
+      background-size: 1900px 1500px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-blend-mode: hard-light;
+    }
+
+    header {
+      background-color: #333;
+      color: #ff0000;
+      padding: 10px;
+      text-align:left;
+      font-family: 'high tower text'; 
+      background-image: url(Silver.jpg);
+      
+    }
+
+    footer{
+        background-color:#333;
+        text-align: center;
+        font-family: 'high tower text';
+        font-style: italic;
+        background-image: url('Silver.jpg');
+        color: #ff0000; 
+    }
+
+    nav {
+      background-color: #0c28b6;
+      color: #000000;
+      padding: 10px;
+      text-align:justify;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .car-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .car-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .car-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2{
+        font-family:monospace;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 35px;
+        color:crimson;
+    }
+    p1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        color:white;
+    }
+    p{
+        font-family:'poor richard';
+        font-style: italic;
+    }
+    h3{
+        font-family:'Lucida Fax';
+        font-weight: 700;
+    }
+    .car-card{
+      background-color:grey;
+    }
+    </style>
+<body>
+  <header>
+    <h1>CARS</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Services </a>
+    <a href="#">Cars</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact us</a>
+  </nav>
+  <section>
+    <h2> AVAILABLE CARS </h2>
+
+    <div class="car-list">
+      <div class="car-card">
+        <img src="Fortuner.jpg" alt="Car 1">
+        <h3>TOYOTA FORTUNER</h3>
+        <p>Price: $120/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Defender.jpg" alt="Car 2">
+        <h3>RANGE ROVER DEFENDER</h3>
+        <p>Price: $150/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Supra.jpg" alt="Car 2">
+        <h3>TOYOTA SUPRA</h3>
+        <p>Price: $125/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Skyline.jpg" alt="Car 2">
+        <h3>NISSAN SKYLINE</h3>
+        <p>Price: $130/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="PoloGT.jpg" alt="Car 2">
+        <h3>VOLKSWAGON POLO GT</h3>
+        <p>Price: $80/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="OVRS.jpg" alt="Car 2" width="200" height="600">
+        <h3>SKODA OCTAVIA VRS</h3>
+        <p>Price: $90/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="BMW.jpg" alt="Car 2" width="300" height="2000">
+        <br>
+        <h3>BMW M4 COUPE</h3>
+        <br>
+        <p>Price: $130/day</p>
+        <br>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="911.jpg" alt="Car 2">
+        <h3>PORSCHE 911 CARRERA S</h3>
+        <p>Price: $140/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="MTHAR.jpg" lt="Car 2">
+        <h3>MAHINDRA THAR</h3>
+        <p>Price: $100/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="M3.jpg" alt="Car 2">
+        <h3>BMW M3 GTR</h3>
+        <p>Price: $150/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="WRANG.jpg" alt="Car 2">
+        <h3>JEEP WRANGLER</h3>
+        <p>Price: $550/Week</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="CIV.jpg" alt="Car 2">
+        <h3>HONDA CIVIC 2022</h3>
+        <p>Price: $500/week</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="XUB 300.jpg" alt="Car 2">
+        <h3>MAHINDRA XUV 300</h3>
+        <p>Price: $85/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="XUV 500.jpg" alt="Car 2">
+        <h3>MAHINDRA XUV 500</h3>
+        <p>Price: $150/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="XUV 700.jpg" alt="Car 2">
+        <h3>MAHINDRA XUV 700 2022</h3>
+        <p>Price: $180/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Range.jpg" alt="Car 2">
+        <h3>RANGE ROVER EVOQUE</h3>
+        <p>Price: $600/Week</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="CRYSTA.jpg" alt="Car 2">
+        <h3>TOYOTA INNOVA CRYSTA</h3>
+        <p>Price: $135/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="VWT.jpg" alt="Car 2">
+        <h3>VOLKSWAGON TROC</h3>
+        <p>Price: $130/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="VWV.jpg" alt="Car 2">
+        <h3>VOLKSWAGON VIRTUS</h3>
+        <p>Price: $135/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Discovery.jpg" alt="Car 2">
+        <h3>LAND ROVER DISCOVERY SPORT</h3>
+        <p>Price: $210/2 days</p>
+        <button>Rent Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p1>&copy; 2023 AUTOMOTIVE "ALL RIGHTS RESERVED" </p1>
+  </footer>
+
+</body>
+</html>

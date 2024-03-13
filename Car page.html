@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      background-image: url('Bokeh.jpg');
+      background-size: 1900px 1500px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-blend-mode: hard-light;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px;
+      text-shadow: 3px 3px 3px #5085c4, 3px 3px 5px hwb(278 20% 7%);
+      margin-bottom: 10px;
+      font-family: 'Algerian';
+      background: linear-gradient(-60deg, rgb(156, 4, 207), rgba(0, 229, 255, 0.932), rgb(132, 0, 255));
+      animation: gradient 3s ease infinite;
+      text-shadow: 3px 3px 3px #5085c4, 3px 3px 5px hwb(278 20% 7%);
+      margin-bottom: 10px;
+    }
+
+    footer{
+        background-color: #000000;
+            color: #ff0000;
+            text-align: center;
+            bottom: 10PX;
+            width: 100%;
+            font-family: 'High tower text';
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 20px;
+    }
+
+    nav {
+      background-color: #ffffff;
+      background-image: url('Universe.jpg');
+      background-size: 1500 1500;
+      padding: 10px;
+      color: white;
+      text-align: left;
+      font-family:'Constantiax' ;
+      word-spacing: 4px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+      padding:20px;
+    }
+
+    nav a:hover{
+        color:rgb(255, 0, 0);
+    }
+    section
+     {
+      padding: 20px;
+    }
+
+    .car-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    h1{
+      font-family:'algerian';
+    }
+    h2{
+        font-family:'high tower text';
+        padding-left: 10px;
+        font-weight:bolder ;
+        font-size: 25px;
+        font-weight:bolder ;
+    }
+
+    .car-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      background-color: #000000;
+      color:white;
+    }
+
+    .car-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    p1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        color:white;
+    }
+    p{
+        font-family:'Maiandra GD';
+        font-style: italic;
+    }
+    h3{
+        font-family:'Lucida Fax';
+        font-weight: 700;
+    }
+    .car-card{
+      background-color:grey;
+    }
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      filter: blur(7px);
+    }
+
+    </style>
+<body>
+  <header>
+    <h1 align="center"> AUTOMOTIVE </h1>
+    <hr>
+    <h1>CARS</h1>
+  </header>
+
+  
+  <nav>
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Home.html">Home</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\About us page.html">About us</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Services.html">Services </a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Car page.html">Cars</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\price.html">Pricing</a> 
+    <a href="C:\Users\prade\OneDrive\Desktop\INTERN\Cont us.html">Contact us</a> 
+  </nav>
+
+  <video autoplay muted loop>
+    <source src="drive.mp4" type="video/mp4">
+  </video>
+
+  <section>
+    <h2> AVAILABLE CARS </h2>
+
+    <div class="car-list">
+      <div class="car-card">
+        <img src="Fortuner.jpg" alt="Car 1">
+        <h3>TOYOTA FORTUNER</h3>
+        <p>Price: Rs.3000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Defender.jpg" alt="Car 2">
+        <h3>RANGE ROVER DEFENDER</h3>
+        <p>Price: Rs.4000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Supra.jpg" alt="Car 2">
+        <h3>TOYOTA SUPRA</h3>
+        <p>Price: Rs.5000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Skyline.jpg" alt="Car 2">
+        <h3>NISSAN SKYLINE</h3>
+        <p>Price: Rs.4500/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="PoloGT.jpg" alt="Car 2">
+        <h3>VOLKSWAGON POLO GT</h3>
+        <p>Price: Rs.2000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="OVRS.jpg" alt="Car 2" width="200" height="600">
+        <h3>SKODA OCTAVIA VRS</h3>
+        <p>Price: Rs.2000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="BMW.jpg" alt="Car 2" width="300" height="2000">
+        <br>
+        <h3>BMW M4 COUPE</h3>
+        <br>
+        <p>Price: Rs.3500/day</p>
+        <br>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="911.jpg" alt="Car 2">
+        <h3>PORSCHE 911 CARRERA S</h3>
+        <p>Price: Rs.4500/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="MTHAR.jpg" lt="Car 2">
+        <h3>MAHINDRA THAR</h3>
+        <p>Price: Rs.2000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="M3.jpg" alt="Car 2">
+        <h3>BMW M3 GTR</h3>
+        <p>Price: Rs.6000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="WRANG.jpg" alt="Car 2">
+        <h3>JEEP WRANGLER</h3>
+        <p>Price: Rs.30000/Week</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="CIV.jpg" alt="Car 2">
+        <h3>HONDA CIVIC 2022</h3>
+        <p>Price: Rs.25000/week</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="XUB 300.jpg" alt="Car 2">
+        <h3>MAHINDRA XUV 300</h3>
+        <p>Price: Rs.2000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="XUV 500.jpg" alt="Car 2">
+        <h3>MAHINDRA XUV 500</h3>
+        <p>Price: Rs.2500/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="XUV 700.jpg" alt="Car 2">
+        <h3>MAHINDRA XUV 700 2022</h3>
+        <p>Price: Rs.3000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Range.jpg" alt="Car 2">
+        <h3>RANGE ROVER EVOQUE</h3>
+        <p>Price: Rs.35000/Week</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="CRYSTA.jpg" alt="Car 2">
+        <h3>TOYOTA INNOVA CRYSTA</h3>
+        <p>Price: Rs.4000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="VWT.jpg" alt="Car 2">
+        <h3>VOLKSWAGON TROC</h3>
+        <p>Price: Rs.3500/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="VWV.jpg" alt="Car 2">
+        <h3>VOLKSWAGON VIRTUS</h3>
+        <p>Price: Rs.3000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="Discovery.jpg" alt="Car 2">
+        <h3>LAND ROVER DISCOVERY SPORT</h3>
+        <p>Price: Rs.12500/2 days</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="i20.jpg" alt="Car 2">
+        <h3>HYUNDAI i20</h3>
+        <p>Price: Rs.2000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="swift eco.jpg" alt="Car 2">
+        <h3>MARUTI SUZUKI SUZUKHI SWIFT</h3>
+        <p>Price: Rs.1500/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="ind.jpg" alt="Car 2">
+        <h3>TATA INDICA</h3>
+        <p>Price: Rs.1000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="kwid.jpg" alt="Car 2">
+        <h3>RENAULT KWID</h3>
+        <p>Price: Rs.1000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="alto.jpg" alt="Car 2">
+        <h3>MARUTI SUZUKI ALTO</h3>
+        <p>Price: Rs.1000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="cele.jpg" alt="Car 2">
+        <h3>MARUTI SUZUKI CELERIO</h3>
+        <p>Price: Rs1200/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="jazz.jpg" alt="Car 2">
+        <h3>HONDA JAZZ</h3>
+        <p>Price: Rs.1800/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="sel.jpg" alt="Car 2">
+        <h3>KIA SELTOS</h3>
+        <p>Price: Rs.3000/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="erti.jpg" alt="Car 2">
+        <h3>MARUTI SUZUKI ERTIGA</h3>
+        <p>Price: Rs.2200/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="scor.png" alt="Car 2">
+        <h3>MAHINDRA SCORPIO</h3>
+        <p>Price: Rs.2560/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="HEC.jpg" alt="Car 2">
+        <h3>MG HECTOR</h3>
+        <p>Price: Rs.13500/2 days</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="ciaz.jpg" alt="Car 2">
+        <h3>MARUTI SUZUKI CIAZ</h3>
+        <p>Price: Rs.25500/10 days</p>
+        <button>Rent Now</button>
+      </div>
+
+    </div>
+  </section>
+<br>
+<br> 
+  <footer>
+    <div class="container-fluid">
+    <p1>&copy; 2024 AUTOMOTIVE "ALL RIGHTS RESERVED" </p1>
+    </div>
+</footer>
+
+<BR>
+
+</body>
+</html>
